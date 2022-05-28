@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+#hero {
+    background: linear-gradient(45deg, red, blue);
+    padding-top: 70px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+#input-number {
+    font-size: 100px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+#calcs {
+    background: #222;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
