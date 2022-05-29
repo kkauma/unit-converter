@@ -1,7 +1,7 @@
 // Input Number
-// const num = 20;
-const num = document.querySelector("input");
-console.log(num);
+const num = 20;
+// const num = document.querySelector("input").value;
+// console.log(num);
 
 // Select elements
 const feetNum = document.querySelector("#feet-num");
@@ -11,6 +11,19 @@ const litersNum = document.querySelector("#liters-num");
 const poundsNum = document.querySelector("#pounds-num");
 const kilosNum = document.querySelector("#kilos-num");
 const btn = document.querySelector("button");
+const masterNum1 = document.querySelector("#master-num1");
+const masterNum2 = document.querySelector("#master-num2");
+const masterNum3 = document.querySelector("#master-num3");
+const masterNum4 = document.querySelector("#master-num4");
+const masterNum5 = document.querySelector("#master-num5");
+const masterNum6 = document.querySelector("#master-num6");
+
+masterNum1.textContent = num;
+masterNum2.textContent = num;
+masterNum3.textContent = num;
+masterNum4.textContent = num;
+masterNum5.textContent = num;
+masterNum6.textContent = num;
 
 // Meters to feet, vice versa
 function metersToFeet() {
