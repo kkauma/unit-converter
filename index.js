@@ -1,5 +1,7 @@
 // Input Number
-const num = 20;
+// const num = 20;
+const num = document.querySelector("input");
+console.log(num);
 
 // Select elements
 const feetNum = document.querySelector("#feet-num");
@@ -8,10 +10,11 @@ const gallonsNum = document.querySelector("#gallons-num");
 const litersNum = document.querySelector("#liters-num");
 const poundsNum = document.querySelector("#pounds-num");
 const kilosNum = document.querySelector("#kilos-num");
+const btn = document.querySelector("button");
 
 // Meters to feet, vice versa
 function metersToFeet() {
-  const feet = (num * 3.281).toFixed(3); // change so it outputs to 3 decimal places
+  const feet = (num * 3.281).toFixed(3);
   feetNum.textContent = feet;
 }
 
@@ -43,9 +46,11 @@ function poundsToKilos() {
 }
 
 // Call conversion functions
-metersToFeet();
-feetToMeters();
-gallonsToLiters();
-litersToGallons();
-poundsToKilos();
-kilosToPounds();
+btn.addEventListener("click", () => {
+  metersToFeet();
+  feetToMeters();
+  gallonsToLiters();
+  litersToGallons();
+  poundsToKilos();
+  kilosToPounds();
+});
