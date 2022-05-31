@@ -1,7 +1,5 @@
 // Input Number
 const num = 20;
-// const num = document.querySelector("input").value;
-// console.log(num);
 
 // Select elements
 const feetNum = document.querySelector("#feet-num");
@@ -11,6 +9,8 @@ const litersNum = document.querySelector("#liters-num");
 const poundsNum = document.querySelector("#pounds-num");
 const kilosNum = document.querySelector("#kilos-num");
 const btn = document.querySelector("button");
+
+// Select elements to inster master num
 const masterNum1 = document.querySelector("#master-num1");
 const masterNum2 = document.querySelector("#master-num2");
 const masterNum3 = document.querySelector("#master-num3");
@@ -18,6 +18,7 @@ const masterNum4 = document.querySelector("#master-num4");
 const masterNum5 = document.querySelector("#master-num5");
 const masterNum6 = document.querySelector("#master-num6");
 
+// Give each master num value the value of num
 masterNum1.textContent = num;
 masterNum2.textContent = num;
 masterNum3.textContent = num;
@@ -58,7 +59,7 @@ function poundsToKilos() {
   kilosNum.textContent = kilos;
 }
 
-// Call conversion functions
+// Call conversion functions, add a 'click' event listener
 btn.addEventListener("click", () => {
   metersToFeet();
   feetToMeters();
